@@ -1,7 +1,6 @@
 @import 'config';
 @import 'menu';
 
-
 * {
   box-sizing: border-box;
 }
@@ -109,6 +108,16 @@ main {
       padding: 0.5rem;
       border-bottom: $secondary-color 5px solid;
     }
+}
+
+// Work projects
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+  }
 }
 
 #main-footer {
