@@ -30,4 +30,17 @@ function toggle_menu () {
   }
 }
 
+// TypeWrite Effect
+
+function typeWriter(element) {
+  const textArray = element.innerHTML.split('')
+  element.innerHTML = ''
+  textArray.forEach(function(letter, index) {
+    setTimeout(function() {element.innerHTML += letter}, 75 * index)
+  })
+}
+
+const phrase = document.querySelector('h2')
+
+typeWriter(phrase)
 
