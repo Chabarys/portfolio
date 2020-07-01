@@ -56,7 +56,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(../image/portrait.jpg);
+      background: url(../image/portrait-images/portrait.jpg);
       background-size: cover;
       border-radius: 50%;
       border: solid 3px #8B0000; }
@@ -102,7 +102,7 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif; }
   body#bg-img {
-    background: url(../image/bg.jpg);
+    background: url(../image/background-images/bg-main.jpeg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -156,11 +156,27 @@ main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row; }
     main .icons a {
-      padding: 0.4rem; }
+      padding: 0.4rem;
+      position: relative;
+      display: grid;
+      place-items: center;
+      width: 50px;
+      height: 50px;
+      text-decoration: none;
+      border: 2px solid #000;
+      margin: 10px 5px;
+      border-radius: 50%;
+      transition: 0.2s linear; }
+      main .icons a img {
+        max-width: 20px;
+        filter: invert(100%);
+        mix-blend-mode: difference; }
       main .icons a:hover {
-        color: #8B0000;
+        background-color: #8B0000;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -174,12 +190,12 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
-    margin-bottom: auto;
+    margin: auto;
     border-radius: 50%;
     border: #8B0000 3px solid;
     background-size: cover;
-    max-width: 350px;
-    max-height: 350px; }
+    width: 300px;
+    height: 300px; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -193,6 +209,8 @@ main {
     background: #f9f5f5;
     padding: 0.5rem;
     border-bottom: #8B0000 5px solid; }
+    .about-info .job h3 {
+      text-align: center; }
 
 .projects {
   display: grid;

@@ -68,12 +68,30 @@ main {
 
   .icons {
     margin-top: 1rem;
-
+    display: flex;
+    flex-direction: row;
     a {
       padding: 0.4rem;
+      position: relative;
+      display: grid;
+      place-items: center;
+      width: 50px;
+      height: 50px;
+      text-decoration: none;
+      border: 2px solid #000;
+      margin: 10px 5px;
+      border-radius: 50%;
+      transition: 0.2s linear;
+
+      img {
+        max-width: 20px;
+        filter: invert(100%);
+        mix-blend-mode: difference;
+      }
 
       &:hover {
-        color: $secondary-color;
+        background-color: $secondary-color;
+        //border-color: $secondary-color;
         @include easeOut();
       }
     }
@@ -97,12 +115,12 @@ main {
 
     .bio-image {
       grid-area: bioimage;
-      margin-bottom: auto;
+      margin: auto;
       border-radius: 50%;
       border: $secondary-color 3px solid;
       background-size: cover;
-      max-width: 350px;
-      max-height: 350px;
+      width: 300px;
+      height: 300px;
     }
     
     .bio {
@@ -126,6 +144,10 @@ main {
       background: lighten($color: $primary-color, $amount: 5);
       padding: 0.5rem;
       border-bottom: $secondary-color 5px solid;
+
+      h3 {
+        text-align: center;
+      }
     }
 }
 
