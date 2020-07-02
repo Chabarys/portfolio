@@ -221,6 +221,8 @@ main {
   @extend .btn;
   background: darken($color: $primary-color, $amount: 50);
   color: #fff;
+  
+  pointer-events: none;
 }
 
 .btn-light {

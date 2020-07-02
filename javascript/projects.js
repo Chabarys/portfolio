@@ -1,13 +1,13 @@
-export default function makeCards() {
+//export default function makeCards() {
   const sectionCards = document.querySelector("div.projects");
   const card = document.querySelector("div.item");
   const container = document.querySelector('[data-modal="container"]')
-
+  var texto = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempora exercitationem labore eum asperiores numquam laborum rerum molestiae ipsa repudiandae quos, blanditiis velit assumenda dolor eligendi perspiciatis facere cum qui. Pariatur iusto voluptate odit consectetur saepe blanditiis aut vel doloribus at. Dolorum esse placeat quod, aliquam sed dicta dolor quos!'
   const projects = [
     {
       id: 1,
       name: 'Projeto 1',
-      description: 'Descrição do primeiro projeto',
+      description: `${texto} ${texto} ${texto}`,
       image: '../image/works-images/project-1.jpg',
     },
     {
@@ -37,7 +37,7 @@ export default function makeCards() {
     cardClone.setAttribute("description", project.description)
     cardClone.setAttribute("image", project.image)
     cardClone.querySelector("img").src = project.image
-    sectionCards.appendChild(cardClone);
+    sectionCards.appendChild(cardClone)
   })
 
   card.remove()
@@ -53,12 +53,12 @@ export default function makeCards() {
       modal.querySelector('.project-title').innerHTML = card.getAttribute("name")
       modal.querySelector('.project-description').innerHTML = card.getAttribute("description")
       modal.querySelector('img').src = card.getAttribute("image")
-    });
-  });
+    })
+  })
 
   document.querySelector(".close").addEventListener("click", () => {
     modalOverlay.classList.remove("active")
-  });
+  })
 
   function clickOutModal(event) {
     event.target === this ? closeModal(event) : null
@@ -68,5 +68,5 @@ export default function makeCards() {
     container.classList.remove('active')
   }
   container.addEventListener('click', clickOutModal)
-}
+//}
 

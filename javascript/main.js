@@ -31,7 +31,6 @@ function toggle_menu () {
 }
 
 // TypeWrite Effect
-
 function typeWriter(element) {
   const textArray = element.innerHTML.split('')
   element.innerHTML = ''
