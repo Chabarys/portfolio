@@ -28,39 +28,36 @@ export default function makeCards() {
       description: 'Descrição do quarto projeto',
       image: '../image/works-images/project-2.jpg',
     },
-  ];
-  // Make Card
+  ]
+
   projects.map(project => {
-    const cardClone = card.cloneNode(true);
-    cardClone.setAttribute("id", project.id);
-    cardClone.setAttribute("name", project.name);
-    cardClone.setAttribute("description", project.description);
-    cardClone.setAttribute("image", project.image);
-    cardClone.querySelector("img").src = project.image;
+    const cardClone = card.cloneNode(true)
+    cardClone.setAttribute("id", project.id)
+    cardClone.setAttribute("name", project.name)
+    cardClone.setAttribute("description", project.description)
+    cardClone.setAttribute("image", project.image)
+    cardClone.querySelector("img").src = project.image
     sectionCards.appendChild(cardClone);
-  });
+  })
 
-  card.remove();
+  card.remove()
 
-  // Modal actions
-  const modalOverlay = document.querySelector(".modal-container");
-  const modal = document.querySelector(".modal");
-  const cards = [...document.querySelectorAll(".cards .projects .item")];
+  const modalOverlay = document.querySelector(".modal-container")
+  const modal = document.querySelector(".modal")
+  const cards = [...document.querySelectorAll(".cards .projects .item")]
 
   cards.forEach(card => {
     card.addEventListener("click", () => {
-      modalOverlay.classList.add("active");
-      modal.classList.add("active");
+      modalOverlay.classList.add("active")
+      modal.classList.add("active")
       modal.querySelector('.project-title').innerHTML = card.getAttribute("name")
       modal.querySelector('.project-description').innerHTML = card.getAttribute("description")
       modal.querySelector('img').src = card.getAttribute("image")
-      console.log(card.getAttribute("id"))
-     // modal.querySelector('.project-description').innerHTML = 'iodajojdaiojdsojsdfódaijf'
     });
   });
 
   document.querySelector(".close").addEventListener("click", () => {
-    modalOverlay.classList.remove("active");
+    modalOverlay.classList.remove("active")
   });
 
   function clickOutModal(event) {
@@ -70,7 +67,6 @@ export default function makeCards() {
     event.preventDefault()
     container.classList.remove('active')
   }
-
   container.addEventListener('click', clickOutModal)
 }
 
