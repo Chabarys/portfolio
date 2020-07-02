@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karina Costa - Portifólio</title>
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/modal.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
@@ -36,14 +37,13 @@
       <div class="projects">
         <div class="item">
           <a href="#!">
-            <img src="../image/project-1.jpg" alt="Project">
+            <img src="../image/works-images/project-1.jpg" alt="Project">
           </a>
-          <a href="#" class="btn-secondary-color">
+          <a href="#" class="btn-secondary-color openModal" data-modal="open">
             <i class="fas fa-eye"></i>
             Visualizar Projeto
           </a>
         </div>
-
       </div>
     </section>
   </main>
@@ -51,8 +51,19 @@
   <footer id="main-footer">
     • Karina Michele Costa •
   </footer>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="close" class="close">X</button>
+      <div>
+        <h1 class="text-secondary project-title"></h1>
+        <p class="description-about project-description"></p>
+        <img src="" alt="">
+      </div>
+    </div>
+  </section>
   
   <script src="../javascript/main.js"></script>
-  <script src="../javascript/projects.js"></script>
+  <script type="module" src="../javascript/modules/work.js"></script>
 </body>
 </html>

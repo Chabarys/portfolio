@@ -1,0 +1,73 @@
+@import 'config';
+
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background: rgba($color: #000000, $alpha: 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  
+  .modal {
+    background: $primary-color;
+    padding: 40px;
+    border: 10px solid $secondary-color;
+    box-shadow: 0 0 0 10px $primary-color;
+    position: relative;
+    width: 800px;
+    height: 500px;
+
+    img {
+      width: 150px;
+      height: 150px;
+      background-size: cover;
+    }
+  }
+
+  .close {
+    background: $primary-color;
+    color: $secondary-color;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 4px solid $secondary-color;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 rgba($color: #000000, $alpha: 0.3);
+    top: -30px;
+    right: -30px;
+    position: absolute;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $primary-color;
+      border-color: $primary-color;
+      @include easeOut();
+    }
+  }
+}
+
+
+.modal-container.active {
+  display: flex;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  } to {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+.active .modal {
+  animation: modal .5s forwards;
+}
