@@ -12,7 +12,6 @@
   justify-content: center;
   align-items: center;
 
-  
   .modal {
     background: $primary-color;
     padding: 40px;
@@ -21,12 +20,6 @@
     position: relative;
     width: 800px;
     height: 500px;
-
-    img {
-      width: 150px;
-      height: 150px;
-      background-size: cover;
-    }
   }
 
   .close {

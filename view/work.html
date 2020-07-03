@@ -37,7 +37,7 @@
       <div class="projects">
         <div class="item">
           <a href="#!">
-            <img src="../image/works-images/project-1.jpg" alt="Project">
+            <img src="" alt="Project">
           </a>
           <a href="#" class="btn-secondary-color openModal" data-modal="open">
             <i class="fas fa-eye"></i>
@@ -54,12 +54,14 @@
 
   <section class="modal-container" data-modal="container">
     <div class="modal">
-      <button data-modal="close" class="close">X</button>
+      <button data-modal="close" class="close" onclick="document.querySelector('video').pause()">X</button>
       <div class="div-details">
         <div class="project-details">
           <h1 class="text-secondary project-title"></h1>
+          <h3 class="link">Link para o projeto: <a class="link" id="link" href="https://www.loveless.com.br" target="_blank"></a></h3>
           <p class="description-about project-description"></p>
           <img src="" alt="">
+          <video width="100%" controls>Infelizmente seu navegador não suporta esse tipo de mídia</video>
         </div>
       </div>
     </div>

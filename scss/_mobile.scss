@@ -7,6 +7,7 @@
         overflow: auto;
         width: 100%;
         height: 65vh;
+        display: flex;
       }
 
       .project-details {
@@ -16,9 +17,18 @@
         
         img {
           border: 3px solid $secondary-color;
-          width: 100%;
+          width: 50%;
           height: 50vh;
           background-size: cover;
+        }
+        video {
+          border: 3px solid $secondary-color;
+          width: 100%;
+          height: 50vh;
+        }
+
+        a.link {
+          color: $secondary-color;
         }
       }
     }    
@@ -49,9 +59,17 @@
         
         img {
           border: 3px solid $secondary-color;
-          width: 100%;
+          width: 60%;
           height: 50vh;
           background-size: cover;
+        }
+        video {
+          border: 3px solid $secondary-color;
+          width: 60%;
+          height: 50vh;
+        }
+        a.link {
+          color: $secondary-color;
         }
       }
     }    
@@ -88,13 +106,21 @@
         img {
           border: 3px solid $secondary-color;
           width: 100%;
-          height: 50vh;
+          height: 45vh;
           background-size: cover;
         }
+        video {
+          border: 3px solid $secondary-color;
+          width: 100%;
+          height: 45vh;
+        }
+        a.link {
+          color: $secondary-color
+        }
+
       }
     }    
   }
-
   main {
     align-items: center;
     text-align: center;
@@ -110,7 +136,6 @@
       align-self: center;
     }
   }
-
   ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
@@ -120,23 +145,19 @@
       transform: translate3d(0, 0, 0);
     }
   }
-
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
-
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0);
-
     .portrait {
       width: 150px;
       height: 150px;
     }
   }
-
   .about-info {
     grid-template-areas: 
     'bioimage' 
@@ -148,18 +169,15 @@
     grid-template-columns: 1fr;
     
   }
-
   main#contact h1 {
     font-size: 3rem;
   }
   main#contact h2 {
     font-size: 1rem;
   }
-
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .boxes div {
     font-size: 1rem;
     padding: 0.5rem;
@@ -199,7 +217,6 @@
   main#work h2 {
     font-size: 1rem;
   }
-
   .modal-container {
 
     .modal {
@@ -220,8 +237,17 @@
         img {
           border: 3px solid $secondary-color;
           width: 100%;
-          height: 50vh;
+          height: 40vh;
           background-size: cover;
+        }
+        video {
+          border: 3px solid $secondary-color;
+          width: 100%;
+          height: 40vh;
+        }
+
+        a.link {
+          color: $secondary-color;
         }
       }
     }    

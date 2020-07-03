@@ -160,13 +160,16 @@ main {
   img {
     width: 100%;
     border: 3px #000 solid;
-
+    height: 220px;
+    background-size: cover;
     &:hover {
       opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
     }
   }
+
+  
 }
 
 // Contact Page
@@ -177,6 +180,7 @@ main {
   margin-top: 1rem;
   width: 100%;
 
+  
   div {
     font-size: 2rem;
     border: 3px #000 solid;
@@ -221,7 +225,6 @@ main {
   @extend .btn;
   background: darken($color: $primary-color, $amount: 50);
   color: #fff;
-  
 }
 
 .btn-light {
