@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karina Costa - Portifólio</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item"> <a href="index.html" class="nav-link">Home</a> </li>
+        <li class="nav-item"> <a href="about.html" class="nav-link">Sobre</a> </li>
+        <li class="nav-item current"> <a href="work.html" class="nav-link">Portfólio</a> </li>
+        <li class="nav-item"> <a href="contact.html" class="nav-link">Contato</a> </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="work">
+    <h1 class="lg-heading">Meu <span class="text-secondary">Portfólio</span></h1>
+    <h2 class="sm-heading">Confira os meus projetos...</h2>
+    <section class="cards">
+      <div class="projects">
+        <div class="item">
+          <a href="#!">
+            <img src="" alt="Project">
+          </a>
+          <a href="#" class="btn-secondary-color openModal" data-modal="open">
+            <i class="fas fa-eye"></i>
+            Visualizar Projeto
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="main-footer">
+    • Karina Michele Costa •
+  </footer>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="close" class="close" onclick="document.querySelector('video').pause()">X</button>
+      <div class="div-details">
+        <div class="project-details">
+          <h1 class="text-secondary project-title"></h1>
+          <h3 class="link">Link para o projeto: <a class="link" id="link" href="https://www.loveless.com.br" target="_blank"></a></h3>
+          <p class="description-about project-description"></p>
+          <img src="" alt="">
+          <video width="100%" controls>Infelizmente seu navegador não suporta esse tipo de mídia</video>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script src="../javascript/main.js"></script>
+  <script src="../javascript/projects.js"></script>
+</body>
+</html>
