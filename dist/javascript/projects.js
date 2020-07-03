@@ -21,9 +21,9 @@ const projects = [
       virtual do que o real, deixando de lado o toque afetivo. Em seguida, tenho mais um texto na sessão de Entretenimento na 
       parte de filmes, que faz uma análise de filmes que retratam as emoções liquidas
     `,
-    image: '../image/works-images/loveless.jpeg',
+    image: './image/works-images/loveless.jpeg',
     link: 'Loveless',
-    video: '../video/loveless.mp4'
+    video: './video/loveless.mp4'
   },
   {
     id: 2,
@@ -42,9 +42,9 @@ const projects = [
       pedindo para ser um colaborador. A ideia é que a pessoa interessada em fazer o movimento realmente se dê o trabalho, e,
       dessa forma, conseguimos eliminar quem não é da causa ou os mal-intencionados.
     `,
-    image: '../image/works-images/rede_azul.jpeg',
+    image: './image/works-images/rede_azul.jpeg',
     link: '',
-    video: '../video/rede_azul.mp4'
+    video: './video/rede_azul.mp4'
   },
   {
     id: 3,
@@ -62,9 +62,9 @@ const projects = [
       número de pessoas. Dentre as diversas religiões existentes, o Religio irá explorar: a umbanda, o budismo, o islamismo, 
       o espiritismo e o judaísmo.
     `,
-    image: '../image/works-images/religio.jpeg',
+    image: './image/works-images/religio.jpeg',
     link: '',
-    video: '../video/religio.mp4'
+    video: './video/religio.mp4'
   },  
   {
     id: 4,
@@ -77,9 +77,9 @@ const projects = [
       Visto a necessidade de um cardápio adaptável e visualmente atraente, cartões de visita para quem não possui a 
       flexibilidade e acesso a algumas redes sociais, foram criados briefing para chegar no resultado final.
     `,
-    image: '../image/works-images/the_oriental_bbq.jpeg',
+    image: './image/works-images/the_oriental_bbq.jpeg',
     link: '',
-    video: '../video/rede_azul.mp4'
+    video: './video/rede_azul.mp4'
   },
 ]
 
