@@ -68,7 +68,7 @@ const projects = [
   },  
   {
     id: 4,
-    name: 'Projeto 4',
+    name: 'The Oriental BBQ',
     description: `
       O TCC de Publicidade e Propaganda foi trabalhar com um cliente real. O The Oriental BBQ é o primeiro pub asiático na 
       cidade de São Paulo. O criador e fundador é Vinicius Ikeda. 
