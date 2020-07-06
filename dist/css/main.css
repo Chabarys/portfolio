@@ -186,7 +186,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio'
+ 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -377,7 +378,11 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage'  'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 
+ 'bio'
+ 'job1'
+ 'job2'
+ 'job3';
     grid-template-columns: 1fr; }
   main#contact h1 {
     font-size: 3rem; }
@@ -400,6 +405,9 @@ main {
   main#home .icons {
     justify-content: center;
     align-self: center; }
+  main#about {
+    padding: 10px;
+    padding-top: 10vh; }
   main#about h1 {
     font-size: 3rem; }
   main#about h2 {
